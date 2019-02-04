@@ -36,7 +36,15 @@ problic boolean addStock (int totalShares, String symbol, double total, double c
 
 //.otros metodos para adicionar activos
 public double getAllMarketValue(){
-    
+    double marketValue = 0;
+    for (Client client : clients.values()) {
+        for (Asset asset : client.getAssets(){
+            marketValue+=asset.getMarketValue(;
+        }
+    }
+    return marketValue;
+        })
+    }
 }
 }
 
